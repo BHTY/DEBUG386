@@ -75,6 +75,16 @@ int main(int argc, char** argv)
         cmd = getchar();
         
         switch (cmd) {
+            case 'A':
+            case 'a':
+                puts("Assembler not yet implemented!");
+                break;
+
+            case 'B':
+            case 'b':
+                puts("Breakpoint setting not yet implemented!");
+                break;
+
             case 'D':
             case 'd':
                 scanf("%x %x", &start, &sz);
@@ -161,21 +171,61 @@ int main(int argc, char** argv)
 
                 break;
 
+            case 'F':
+            case 'f':
+                puts("Loading from file not yet implemented!");
+                break;
+
             case 'G':
             case 'g':
                 scanf("%x", &fun_ptr);
                 printf("Subroutine returned %x\n", fun_ptr());
                 break;
 
+            case 'K':
+            case 'k':
+                puts("Stack trace not yet implemented!");
+                break;
+
+            case 'M':
+            case 'm':
+                puts("Removing breakpoints not yet implemented!");
+                break;
+
             case 'Q':
             case 'q':
                 exit(0);
+                break;
+
+            case 'R':
+            case 'r':
+                puts("Register dumping not yet implemented!");
+                break;
+
+            case 'S':
+            case 's':
+                puts("Saving to file not yet implemented!");
+                break;
+
+            case 'T':
+            case 't':
+                puts("Single stepping not yet implemented!");
+                break;
+
+            case 'U':
+            case 'u':
+                puts("Disassembling not yet implemented!");
                 break;
             
             case 'V':
             case 'v':
                 scanf("%x", &sz);
                 printf("Allocated %d byte executable memory block at %p\n", sz, allocate_executable_memory(sz));
+                break;
+
+            case 'W':
+            case 'w':
+                puts("Register writing not yet implemented!");
                 break;
 
             case '?':
