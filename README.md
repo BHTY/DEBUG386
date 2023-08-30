@@ -4,3 +4,8 @@ Platforms to support (planned)
 * OS/2 2.0+
 * DOS (with DPMI)
 * Linux
+Modules
+* Main
+* Assembler
+* Disassembler
+* OS-specific parts
